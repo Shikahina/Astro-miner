@@ -79,7 +79,7 @@ public class ScraperService {
 			formData.put("sec", reqbody.getSec());
 			formData.put("place", "erode");
 			formData.put("longdeg", "77");
-			formData.put("longmin", "32");
+			formData.put("longmin", "33");
 			formData.put("longew", "E");
 			formData.put("latdeg", "11");
 			formData.put("latmin", "20");
@@ -91,7 +91,7 @@ public class ScraperService {
 			formData.put("charting", "0");
 			formData.put("timezoneid","Asia/Kolkata");
 			formData.put("accuracy","");
-			formData.put("languagecode","");
+			formData.put("languagecode","0");
 			formData.put("methodName", "newChartDone");
 			Connection.Response afterDOB = Jsoup.connect(newChart).cookies(dobPage.cookies()).data(formData)
 					.method(Connection.Method.POST).userAgent(USER_AGENT).execute();
