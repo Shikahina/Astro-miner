@@ -15,6 +15,7 @@ import org.jsoup.nodes.Node;
 import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,6 +31,7 @@ import com.scraper.model.PlanetPosition;
 import com.scraper.service.MiscellaneousService;
 import com.scraper.service.ScraperService;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class PlanetController {
 	
