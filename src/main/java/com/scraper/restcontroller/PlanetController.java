@@ -31,7 +31,7 @@ import com.scraper.model.PlanetPosition;
 import com.scraper.service.MiscellaneousService;
 import com.scraper.service.ScraperService;
 
-@CrossOrigin(origins = {"https://dinakadhi.herokuapp.com/","localhost:3000"})
+@CrossOrigin(origins = {"https://dinakadhi.herokuapp.com/","http://localhost:3000"})
 @RestController
 public class PlanetController {
 	
