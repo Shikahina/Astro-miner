@@ -161,16 +161,49 @@ public class ScraperService {
 	
 	
 	public GetDegreeRequestBody yesterdayThisTime(GetDegreeRequestBody today) {
+		HashMap<Integer, Integer> javaMonthToHumanMonth=new HashMap<Integer, Integer>();
+		javaMonthToHumanMonth.put(0,1);
+		javaMonthToHumanMonth.put(1,2);
+		javaMonthToHumanMonth.put(2,3);
+		javaMonthToHumanMonth.put(3,4);
+		javaMonthToHumanMonth.put(4,5);
+		javaMonthToHumanMonth.put(5,6);
+		javaMonthToHumanMonth.put(6,7);
+		javaMonthToHumanMonth.put(7,8);
+		javaMonthToHumanMonth.put(8,9);
+		javaMonthToHumanMonth.put(9,10);
+		javaMonthToHumanMonth.put(10,11);
+		javaMonthToHumanMonth.put(11,12);
+		
+		HashMap<Integer, Integer> humanMonthToJavaMonth=new HashMap<Integer, Integer>();
+		humanMonthToJavaMonth.put(1,0);
+		humanMonthToJavaMonth.put(2,1);
+		humanMonthToJavaMonth.put(3,2);
+		humanMonthToJavaMonth.put(4,3);
+		humanMonthToJavaMonth.put(5,4);
+		humanMonthToJavaMonth.put(6,5);
+		humanMonthToJavaMonth.put(7,6);
+		humanMonthToJavaMonth.put(8,7);
+		humanMonthToJavaMonth.put(9,8);
+		humanMonthToJavaMonth.put(10,9);
+		humanMonthToJavaMonth.put(11,10);
+		humanMonthToJavaMonth.put(12,11);
+		
+		
 		final long MILLIS_IN_A_DAY = 1000 * 60 * 60 * 24;
 		Date todaysDate=new Date();
 		todaysDate.setDate(Integer.parseInt(today.getDay()));
-		todaysDate.setMonth((Integer.parseInt(today.getMonth())));
+		todaysDate.setMonth(humanMonthToJavaMonth.get(Integer.parseInt(today.getMonth())));
 		todaysDate.setYear(Integer.parseInt(today.getYear()));
-		
+		//System.out.println("============================================");
+		//System.out.println("todays date:"+ today);
 		Date yesterdaysDate = new Date(todaysDate.getTime() - MILLIS_IN_A_DAY);
 		GetDegreeRequestBody yesterday=new GetDegreeRequestBody();
+		//System.out.println("yesterday whole:"+yesterdaysDate);
+		//System.out.println("yesterdays month:"+ yesterdaysDate.getMonth());
+		//System.out.println("============================================");
 		yesterday.setDay(String.valueOf(yesterdaysDate.getDate()));
-		yesterday.setMonth(String.valueOf(yesterdaysDate.getMonth()));;
+		yesterday.setMonth(String.valueOf(javaMonthToHumanMonth.get(yesterdaysDate.getMonth())));;
 		yesterday.setYear(String.valueOf(yesterdaysDate.getYear()));
 		yesterday.setHrs(today.getHrs());
 		yesterday.setMin(today.getMin());
