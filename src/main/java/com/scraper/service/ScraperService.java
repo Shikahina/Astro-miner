@@ -21,17 +21,16 @@ import com.scraper.model.PlanetPosition;
 
 @Service
 public class ScraperService {
-
-	final String OldCred = "bemolek452@dedatre.com";
-	
+	//Attention here!!!!
+	final String email = "fillYourEmailID";
+	final String password = "fillYourPassword";
 	
 	public List<PlanetPosition> getDegree(GetDegreeRequestBody reqbody) {
 		final String USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36";
 		final String LOGIN_FORM_URL = "https://www.astrosage.com/";
 		final String LOGIN_ACTION_URL = "https://ascloud.astrosage.com/LoginServlet";
 		final String callback = "myCallback";
-		final String email = "hotebeg120@dmsdmg.com";
-		final String password = "hotebeg120@dmsdmg.com";
+		
 		final String uname = "";
 		final String code = "login";
 		final String savecookie = "false";
