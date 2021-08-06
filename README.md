@@ -13,8 +13,8 @@ This Application sends data to https://github.com/Shikahina/DinaKadhi which disp
 2) Run `mvn clean install`
 ## Configuration
 
-You need to enter your credentials(username and password ) in `src>main>java/com/scraper>service>ScraperService` which you have to obtain by registering to the scraping website.
-(I can put it in application.properties ,yes. You can expect that with someother updates, in the _next_ version) 
+You need to enter your credentials(username and password ) in `src>main>java/com/scraper>service>ScraperService` which you have to obtain by registering to the scraping website.\
+> (I can put it in application.properties ,yes. You can expect that with someother updates, in the _next_ version) 
 ## How to run
 
 In the project directory, you can run:
