@@ -9,8 +9,8 @@ This Application send data to https://github.com/Shikahina/DinaKadhi which displ
 
 ## Setup
 
-1)After cloning ,navigate to the root project directory (it's where you can find pom.xml).\
-2)run `mvn clean install`\
+1) After cloning ,navigate to the root project directory (it's where you can find pom.xml).\
+2) run `mvn clean install`
 
 ## How to run
 
