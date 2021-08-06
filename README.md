@@ -30,4 +30,6 @@ Please feel free to access https://planet-backend-application.herokuapp.com/ to 
 
 Use [Postman](https://www.postman.com/) to consume and test the REST end points available from the project. 
 
+The below screenshot explains how the request body must be built.  
+
 ![planetposdiffreq](https://user-images.githubusercontent.com/62425476/128444451-ed908115-ad6b-427e-991e-df5e0a77de96.png)
