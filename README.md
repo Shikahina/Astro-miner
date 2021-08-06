@@ -24,7 +24,7 @@ Runs on [http://localhost:8080](http://localhost:8080).
 
 ### Live Demo
 Please feel free to access https://planet-backend-application.herokuapp.com/ to get a demo of this project. \
-(Don't worry your internet is not slow ,the free Platform as a Service provider([Heroku](https://www.heroku.com/)) takes sometime to spin up their server,when the website is used once in a blue moon) .
+(Don't worry your internet is not slow ,the free Platform as a Service provider([Heroku](https://www.heroku.com/)) takes sometime to spin up their server,when the webservice is used once in a blue moon) .
 
 ## How to consume/check 
 
