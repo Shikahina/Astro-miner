@@ -5,7 +5,7 @@ This project is built with Java Spring Boot. JSoup library is used for scraping 
 ## Use case
 
 Astrologers find the daily planetary positions from some app or website and calculate the difference between their positions to find the speed of the planets on a given day (24 hrs). 
-This Application send data to https://github.com/Shikahina/DinaKadhi which displays the end result of their repeated calculations.
+This Application sends data to https://github.com/Shikahina/DinaKadhi which displays the end result of their repeated calculations.
 
 ## Setup
 
